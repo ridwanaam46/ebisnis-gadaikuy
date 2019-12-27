@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	padding-top: 50px;
+
+	margin: 0 auto;
+}
+
+.cards {
+	width: 50%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  	border-radius: 2px;
+  	overflow: hidden;
+  	margin: 0 auto;
+
+}.peta{
+	width: 50%;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  	border-radius: 2px;
+  	overflow: hidden;
+  	margin: 0 auto;
+}
+.tmoney{
+	margin-top: 70px;
+	margin-left: 50px;
+	width: 15px;
+	height: 15px;
+}.jemput{
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 15px;
+	height: 15px;
+}.antar{
+	margin-top: 30px;
+	margin-left: 50px;
+	width: 15px;
+	height: 15px;
+}
+
+.cards-image-a {
+	width: 70%;
+
+	margin-left: 10%;
+	margin-top: -50px;
+}
+.cards-image-b {
+	width: 15%;
+
+	
+	}
+	.cards-image-c {
+	width: 15%;
+
+	
+	}
+	
+.cards-image-a img {
+	width: 15%;
+
+}
+
+.cards-image-b img {
+	width: 60%;
+margin-left: 80%;
+margin-top: -18%;
+
+}
+.cards-image-c img {
+	width: 35%;
+margin-left: 80%;
+margin-top: -22.5%;
+
+}
+.cards-box {
+	padding: 15px;
+}
+.cards-title-a {
+	margin: 0;
+	margin-top: -31%;
+	
+	font-size: 15px;
+	font-weight: 500;
+	margin-left:20%;
+}
+.cards-title-b {
+	margin-top: 50px;
+	margin-left: 145px;
+	font-size: 15px;
+	font-weight: 500;
+	
+	
+}
+.cards-title-c {
+	margin-top: 7%;
+	margin-left: 20%;
+	font-size: 15px;
+	font-weight: 500;
+
+}
+
+.cards-footer {
+	display: block;
+	margin-top: -5px;
+	padding: 0 15px 2px;
+}
+.cards-footer a {
+	width: 20%;
+	background-color: #ee4b28;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px 10px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 2px;
+	text-align: center;
+	margin-left: 18%;
+	margin-bottom: 20px;
+}
+.cards-footer a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 120px;
+	height: 120px;
+	margin-left: -60px;
+	margin-top: -60px;
+	background: #3f51b5;
+	border-radius: 100%;
+	opacity: .6;
+
+	transform: scale(0);
+}
+@keyframes ripple {
+	0% {
+		transform: scale(0);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1);
+		border-radius: 2px;
+	}
+}
+
+a:not(:active):after {
+	animation: ripple 1s ease-out;
+}
+
+a:after {
+	visibility: hidden;
+}
+
+a:focus:after {
+	visibility: visible;
+}h3{
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin-left: 35%;
+}.peta h3{
+margin-left: 45%;
+
+}
+	</style>
+
+
+
+</head>
+<body>
+  <div class="container">
+  <div class="cards">
+
+    <h3>Metode Serah Terima Barang</h3>
+    <form>
+    	<input type="radio" name="TMoney" class="tmoney">
+    <div class="cards-image-a">
+    <img src="https://www.dimo.co.id/gallery/issuer/91257fcbf56ce9d7.jpg" >
+    </div>
+    <input type="radio" name="jemput" class="jemput">
+    <div class="cards-image-b">
+    <img src="https://aldilaundry.files.wordpress.com/2014/04/brum.png" >
+    </div> 
+    <input type="radio" name="antar" class="antar">
+    <div class="cards-image-c">
+     <img src="https://previews.123rf.com/images/artinspiring/artinspiring1605/artinspiring160500234/57073778-delivery-man-with-parcel-fast-transportation-isolated-african-american-cartoon-character-on-white-ba.jpg" > 
+    </div>
+</form><br>
+<br>
+    
+    <div class="cards-box">
+      <h1 class="cards-title-a">Bayar dengan T-Money</h1>
+
+     <h1 class="cards-title-b">Barang di jemput team GadaiKuy</h1>
+
+    <h1 class="cards-title-c">Antar Barang ke Toko</h1>
+
+    </div>
+ 
+   <div class="cards-footer">
+      <a href="#">Batalkan</a>
+      <a href="#">Ajukan Gadai</a>
+    </div> 
+  </div>
+</div>
+
+   </section>
+   <br>
+<div class="peta">
+   <h3>Lokasi GadaiKuy</h3>
+<div class="map-responsive">
+  <center> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+</div></div>
+</body>
+</html>
+
+<!-- <style type="text/css">
+	body {
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	padding-top: 50px;
+}
+
+.cards {
+	width: 50%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  	border-radius: 2px;
+  	overflow: hidden;
+  	margin: 0 auto;
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(0);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1);
+		border-radius: 2px;
+	}
+}
+
+a:not(:active):after {
+	animation: ripple 1s ease-out;
+}
+
+a:after {
+	visibility: hidden;
+}
+
+a:focus:after {
+	visibility: visible;
+}h3{
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin-left: 35%;
+}input{
+
+	
+	 width: 18px;
+	  margin-right: 16px; 
+	  margin-left: 0px;
+	    height: 18px;
+
+}
+.jemput{
+	margin-top: 20px;
+}.containet input{
+	position: relative;
+}.container img{
+	width: 100px;
+	height: 100px;
+	margin-top: 80px;
+}
+
+</style>
+	<title></title>
+</head>
+<body>
+	 <div class="container">
+  <div class="cards">
+    <h3>Metode Serah Terima Barang</h3>
+   
+<form method="post" action="#">
+	<div class="image">
+		
+	<input type="radio" name="antarbarang" value="antar" class="antar">antar barang ke toko </div><br> 
+		<input type="radio" name="jemputbarang" value="jemput" class="jemput"> barang di jemput team GadaiKuy <br>
+		<img src="https://www.dimo.co.id/gallery/issuer/91257fcbf56ce9d7.jpg">
+		<input type="radio" name="jTMoney" value="TMoney" class="TMoney"> Bayar menggunakan T-Money
+
+</form>
+  
+   </div> -->
